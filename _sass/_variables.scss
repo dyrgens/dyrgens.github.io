@@ -3,41 +3,44 @@
 // VARIABLES
 //
 
-// Colors
-$blue: #4183C4;
+:root {
+  // Colors
+  --blue: #4183C4;
 
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+  // Grays
+  --heavyText: #000;
+  --softText: #222;
+  --text: #333;
+  --gray: #666;
+  --surface: #eee;
+  --bg: #fff;
 
-@font-face {
-  font-family: "Veleka";
-  src: url("/fonts/Veleka-Regular.otf") format('opentype');
-  font-weight: normal;
-  font-style: normal;
+  --surface-border: 1px solid var(--surface);
+  --top-border: var(--surface-border);
 }
-@font-face {
-  font-family: "Veleka";
-  src: url("/fonts/Veleka-Bold.otf") format('opentype');
-  font-weight: bold;
-  font-style: normal;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    // Colors
+    --blue: #4183C4;
+
+    // Grays
+    --heavyText: #d8d8d8;
+    --softText: #c8c8c8;
+    --text: #c8c8c8;
+    // --gray: #666;
+    --surface: #222;
+    --bg: #080808;
+    --surface-border: none;
+    --top-border: 1px solid #888;
+  }
 }
-@font-face {
-  font-family: "Veleka";
-  src: url("/fonts/Veleka-Italic.otf") format('opentype');
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Veleka";
-  src: url("/fonts/Veleka-BoldItalic.otf") format('opentype');
-  font-weight: bold;
-  font-style: italic;
-}
+
+@font-face { font-family: "Veleka"; src: url("/fonts/Veleka-Regular.otf") format('opentype');     font-weight: normal;  font-style: normal; }
+@font-face { font-family: "Veleka"; src: url("/fonts/Veleka-Bold.otf") format('opentype');        font-weight: bold;    font-style: normal; }
+@font-face { font-family: "Veleka"; src: url("/fonts/Veleka-Italic.otf") format('opentype');      font-weight: normal;  font-style: italic; }
+@font-face { font-family: "Veleka"; src: url("/fonts/Veleka-BoldItalic.otf") format('opentype');  font-weight: bold;    font-style: italic; }
+
 // Font stacks
 $helvetica: Veleka, Noto Serif, Helvetica, Arial, sans-serif;
 $helveticaNeue: Veleka, Noto Serif, Helvetica, Arial, sans-serif;
