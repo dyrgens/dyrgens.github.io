@@ -14,10 +14,34 @@ $gray: #666;
 $lightGray: #eee;
 $white: #fff;
 
+@font-face {
+  font-family: "Veleka";
+  src: url("/fonts/Veleka-Regular.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Veleka";
+  src: url("/fonts/Veleka-Bold.otf") format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Veleka";
+  src: url("/fonts/Veleka-Italic.otf") format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Veleka";
+  src: url("/fonts/Veleka-BoldItalic.otf") format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$helvetica: Veleka, Noto Serif, Helvetica, Arial, sans-serif;
+$helveticaNeue: Veleka, Noto Serif, Helvetica, Arial, sans-serif;
+// $helveticaNeue: Noto Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {
