@@ -23,9 +23,17 @@ body {
   color: var(--text);
 }
 
-.entry > p {
-  text-align: inline-start;
-  text-indent: 1rem;
+.entry {
+  line-height: 1.6;
+  > p {
+    text-indent: 1rem;
+  }
+  > * > li {
+    text-indent: 0.5rem;
+  }
+  > * > li {
+    margin-inline-start: 0.75rem;
+  }
 }
 
 .container {
@@ -40,12 +48,12 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--softText);
   font-weight: bold;
 
-  line-height: 1.7;
+  line-height: 1.4;
   margin: 1em 0 15px;
   padding: 0;
 
   @include mobile {
-    line-height: 1.4;
+    line-height: 1.2;
   }
 }
 
