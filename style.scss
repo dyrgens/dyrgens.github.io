@@ -24,6 +24,10 @@ body {
 }
 
 .entry {
+
+  a::after {
+    content: "↗";
+  }
   line-height: 1.6;
   > p {
     text-indent: 1rem;
