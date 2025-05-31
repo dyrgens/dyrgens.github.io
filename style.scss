@@ -81,6 +81,18 @@ p {
   margin: 15px 0;
 }
 
+blockquote {
+  margin: 1.8em .8em;
+  border-left: 2px solid var(--gray);
+  padding: 0.1em 1em;
+  color: var(--gray);
+  font-style: italic;
+}
+
+btw {
+  font-size: 85%;
+}
+
 a {
   color: var(--blue);
   text-decoration: none;
@@ -128,11 +140,14 @@ img {
   max-width: none;
 }
 
-.date {
+.date, .minute-read {
   font-style: italic;
   color: var(--gray);
   padding-top: 0px;
   padding-bottom: 0px;
+}
+.minute-read {
+  font-size: 90%;
 }
 
 // Specify the color of the selection
