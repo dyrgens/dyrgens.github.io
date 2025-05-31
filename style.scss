@@ -156,11 +156,11 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: var(--heavyText);
+  // color: var(--heavyText);
   background: var(--surface);
 }
 ::selection {
-  color: var(--heavyText);
+  // color: var(--heavyText);
   background: var(--surface);
 }
 
